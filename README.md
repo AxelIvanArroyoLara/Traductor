@@ -10,10 +10,11 @@ Repositorio de entregables de diseño para Fase 1 (alcance, investigación, arqu
 - **Seguimiento:** GitHub Issues + GitHub Projects
 
 ## Equipo
-- **U1** — UX Research / Producto
-- **U2** — UI/UX Design
-- **T1** — Product/Tech Analyst
-- **T2** — Tech Lead / Sistemas
+- **U1 — UX Research / Producto (Dani):** Lidera investigación con usuarios, síntesis de insights, definición de necesidades/JTBD, validación de flujos desde negocio/usuario y plan de pruebas de usabilidad.
+- **U2 — UI/UX Design (Naia):** Lidera arquitectura visual y experiencia de interfaz: wireframes, diseño UI de alta fidelidad, prototipo navegable, componentes/UI kit y documentación visual para handoff.
+- **T1 — Product/Tech Analyst (Mike):** Traduce necesidades de producto a requisitos funcionales y reglas; lidera backlog, criterios de éxito, RBAC, casos de uso, reglas/validaciones y consistencia funcional entre diseño y desarrollo.
+- **T2 — Tech Lead / Sistemas (Bruno):** Lidera definición técnica del sistema: arquitectura lógica, modelo de dominio, procesos complejos (BPMN/estados), restricciones técnicas, integraciones y viabilidad de implementación.
+- **PM — Project Manager (Iván):** Coordina el plan de trabajo diario, prioridades, seguimiento en GitHub (Issues/Project), gestión de bloqueos, alineación con stakeholders y control de tiempos/entregables. Proporciona apoyo directo en todas las áreas del proyecto.
 
 ## Entregables
 ### 1) Alineación y alcance
