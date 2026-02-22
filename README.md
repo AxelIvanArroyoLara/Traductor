@@ -18,12 +18,6 @@ Repositorio de entregables de diseño para Fase 1 (alcance, investigación, arqu
 
 # Tabla RACI por entregable y día (2 semanas / 10 días hábiles)
 
-## Roles
-- **U1** = UX Research / Producto
-- **U2** = UI/UX Design
-- **T1** = Product/Tech Analyst
-- **T2** = Tech Lead / Sistemas
-
 ## Leyenda RACI
 - **R** = Responsable (ejecuta)
 - **A** = Accountable (dueño final / quien cierra)
