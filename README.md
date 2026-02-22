@@ -16,6 +16,19 @@ Repositorio de entregables de diseño para Fase 1 (alcance, investigación, arqu
 - **T2 — Tech Lead / Sistemas (Bruno):** Lidera definición técnica del sistema: arquitectura lógica, modelo de dominio, procesos complejos (BPMN/estados), restricciones técnicas, integraciones y viabilidad de implementación.
 - **PM — Project Manager (Iván):** Coordina el plan de trabajo diario, prioridades, seguimiento en GitHub (Issues/Project), gestión de bloqueos, alineación con stakeholders y control de tiempos/entregables. Proporciona apoyo directo en todas las áreas del proyecto.
 
+## Roadmap (2 semanas / 10 días hábiles)
+
+| Día | Entregables |
+|---|---|
+| 1 | 1, 2, 3 |
+| 2 | 4 |
+| 3–4 | 5, 6, 7 |
+| 5 | 8, 9, 10, 11 |
+| 6–7 | 12, 13, 14, 15 |
+| 8 | 16 |
+| 9 | 17 |
+| 10 | 18 |
+
 ## Entregables
 ### 1) Alineación y alcance
 - [01. Brief de producto](docs/01-alineacion-alcance/01-brief-producto.md)
@@ -48,7 +61,6 @@ Repositorio de entregables de diseño para Fase 1 (alcance, investigación, arqu
 - [18. Diseño UI completo](docs/06-ui-final/18-diseno-ui-completo.md)
 
 ## Gestión
-- [Roadmap 2 semanas](project-management/roadmap-2-semanas.md)
 - [RACI](project-management/raci.md)
 - [Registro diario](project-management/daily-log/)
 - [ADRs / Decisiones](project-management/decisions/)
