@@ -35,6 +35,8 @@ El modelo de IA aún está en fase de definición (propio, open-source o externo
 
 El mapa de stakeholders identifica los actores que influyen o son influenciados por el sistema, así como las tensiones que generan.
 
+![Mapa de Stakeholders](../../diagrams/stakeholders-y-ecosistema/WS-Stakeholders-Traductor.png)
+
 ## 2.1 Stakeholder Central (Core Audience)
 
 ### Traductor profesional / freelance / profesor-traductor
