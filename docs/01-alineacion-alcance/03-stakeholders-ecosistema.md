@@ -8,7 +8,7 @@ T2 — Bruno (Tech Lead / Sistemas)
 
 ## Objetivo
 
-Consolidar en un solo documento el análisis estratégico del producto SaaS de traducción asistida por IA en Fase 1, integrando:
+Consolidar en un solo documento el análisis estratégico del producto SaaS de traducción asistida por IA en Fase 1, integrando los siguientes aspectos:
 
 - Identificación de stakeholders.
 - Tensiones estratégicas.
@@ -25,9 +25,9 @@ El producto se plantea como un **SaaS enfocado inicialmente en traductores profe
 - Traducción asistida por IA contextual.
 - Personalización por proyecto o cliente.
 - Enfoque en confidencialidad y seguridad.
-- No sustitución del traductor, sino asistencia.
+- No sustitución del traductor, sino asistencia para la traducción de documentos largos y complejos.
 
-El modelo de IA aún está en fase de definición (propio, open-source o externo).
+En estos momentos el modelo de IA se encuentra aún en fase de definición (ya sea propio, open-source o externo).
 
 ---
 
@@ -41,9 +41,7 @@ El mapa de stakeholders identifica los actores que influyen o son influenciados 
 
 ### Traductor profesional / freelance / profesor-traductor
 
-Actor principal del sistema.
-
-Intereses:
+Es el actor principal del sistema. Cuenta con los siguientes **intereses**:
 
 - Velocidad.
 - Calidad contextual.
@@ -52,12 +50,14 @@ Intereses:
 - Propiedad de datos.
 - Personalización por cliente.
 
-Define:
+Por los anteriores criterios, define e influye en:
 
 - Requisitos funcionales.
 - UX.
 - Modelo de dominio inicial.
 - Propuesta de valor.
+
+En resumen, es el cliente y en quien va a recaer el diseño del producto. Es vital mantenerlo cerca por si existe la presencia de nuevos intereses.
 
 ---
 
@@ -65,9 +65,9 @@ Define:
 
 ### Equipo de desarrollo
 
-Impacta directamente:
+En este caso, WolfDevelopment Studios. Impactan directamente en:
 
-- Arquitectura.
+- Arquitectura del producto.
 - Seguridad real.
 - Escalabilidad.
 - Desacoplamiento del modelo IA.
@@ -76,10 +76,12 @@ Impacta directamente:
 
 ### Estudiantes y profesores de idiomas
 
-Segmento secundario en Fase 1, pero relevante para:
+Son un segmento secundario en Fase 1 ya que el objetivo clave son los traductos, no obstante son relevantes para:
 
 - Casos de uso educativos.
 - Posible expansión futura.
+
+Con respecto a esto úlitmo, al ser uno de los clientes "profesor-traductor", los estudiante y profesores de idiomas son un grupo al que influenciaran tarde o temprano en el desarrollo.
 
 ---
 
@@ -87,7 +89,7 @@ Segmento secundario en Fase 1, pero relevante para:
 
 ### Clientes corporativos del traductor
 
-Empresas, despachos, editoriales o instituciones que generan los documentos.
+A clientes coorporativos se consideran: Empresas, despachos, editoriales o instituciones que generan los documentos. Son aquellos que envían la información al traductor y tienen especial énfasis en la seguridad de la manipulación de datos.
 
 Influyen en:
 
@@ -106,26 +108,23 @@ Generan presión en:
 
 - Estándares de calidad.
 - Velocidad.
-- Precio.
+- **Precio**.
 - Simplicidad.
 
 ---
 
 ### Proveedores tecnológicos
 
-Incluyen:
+A proveedores tecnológicos incluyo a proveedores existentes de: Hosting, base de datos, servicios de cifrado, y posible proveedor de modelo IA.
 
-- Hosting.
-- Base de datos.
-- Servicios de cifrado.
-- Posible proveedor de modelo IA.
-
-Impactan:
+Los provedores impactan en:
 
 - Costos.
 - Disponibilidad.
 - Latencia.
 - Seguridad efectiva.
+
+Los proveedores definen estándares de **seguridad y experiencias** para los usuarios.
 
 ---
 
@@ -137,6 +136,8 @@ Condicionan:
 - Retención.
 - Eliminación segura.
 - Logs y auditoría.
+
+De igual forma, estén presentes al momento en que el los clientes comprueban el uso de IA en documentos del traductor.
 
 ---
 
@@ -162,12 +163,14 @@ Diferenciador:
 - Glosarios.
 - Memoria contextual.
 - Proyectos por cliente.
+- No verificable por verificadores de IA.
 
 Implica:
 
 - Modelo de dominio complejo.
 - Separación multi-tenant.
 - Diseño modular.
+- Humanización de texto.
 
 ---
 
@@ -193,6 +196,8 @@ Responde a:
 - Cómo fluye el dinero.
 - Cómo fluye la dependencia técnica.
 
+![Mapa de Stakeholders](../../diagrams/stakeholders-y-ecosistema/Diagrama-de-Ecosistema-WS-Traductor.png)
+
 ---
 
 ## 4.1 Límite del Sistema
@@ -216,21 +221,25 @@ Incluye:
 
 ### Traductor
 
-Flujo de información:
+#### Flujo de información del traductor:
+Para el flujo de información hay que considerar que en primer lugar, el traductor recibe un documento de parte de su cliente y este documento debe de ser traducido a otro idioma. Para tal documento, el traductor accede a la plataforma, lo sube y selecciona, la plataforma envía el texto a procesar al modelo de IA. El modelo de IA ahora envía las segurencias a la plataforma; la plataforma por su parte ofrece las sugerencias, alternativas glosarios y contexto al traductor para realizar el trabajo. Finalmente, el traductor envía la información a su cliente.
 
-Traductor → Plataforma → Modelo IA → Plataforma → Traductor
+Lo anterior se presenta tal que: 
+Cliente → Traductor → Plataforma → Modelo IA → Plataforma → Traductor → Cliente
 
-Flujo económico:
+#### Flujo económico:
+El flujo de pago se puede simplificar de la siguietne forma:
 
-Traductor → Suscripción → Plataforma
+Traductor → Pasarela de pago → Plataforma
 
 ---
 
 ### Clientes del Traductor
+#### Flujo de información
+Para el caso de los clientes, estos envían el documento al traductor, el traductor sigue su flujo de información y cuando recibe la entrega final, verifica con los reguladores que se cumplan todos los requirimientos necesarios y comprueba que los detectores de IA no muestren resultados preocupantes.
+Clientes → Traductor → Plataforma → Traductor → Clientes → Reguladores
 
-Clientes → Traductor → Plataforma
-
-Generan:
+Por tales fines, los clientes al final del día generan:
 
 - Documentos.
 - Contexto.
@@ -259,7 +268,7 @@ Flujo técnico:
 Plataforma → texto  
 Modelo → sugerencia
 
-Debe diseñarse como módulo desacoplado.
+Debe diseñarse como módulo desacoplado y adaptable pensando en 3 formas de traducción que interactúen mutuamente: (i) traducción total, (ii) traducción parcial de un fragmento seleccionado, (iii) traducción por sugerencia.
 
 ---
 
@@ -277,9 +286,10 @@ Impacta escalabilidad y costos.
 
 ---
 
-### Pasarela de pagos (si aplica)
+### Pasarela de pagos
 
-Traductor → Pago → Plataforma
+#### Flujo économico planteado
+Traductor → Pasarela de pagos → Plataforma
 
 Impacta:
 
